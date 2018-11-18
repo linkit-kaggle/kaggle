@@ -1,2 +1,2 @@
-def test_func(x):
-    return x * -1
+def test-function(x):
+	return x * (-1)
