@@ -1,6 +1,6 @@
-# linkit-kaggle-Team
+# linkit-kaggle-Team #
 
-##1. Set up working directory
+## Set up working directory ##
 1. Open your Terminal 
 
 2. Create a new working directory with `mkdir <dir_name>`
@@ -9,7 +9,7 @@
 
 4. Clone the Github-Repo using `git clone https://github.com/linkit-kaggle/kaggle.git`
 
-##Working with Github
+## Working with Github ##
 - to see which you are working on use `git branch`. The asteriks (*) indicates the current branch.
 
 - to work on your ideas, always create a new branch using 
