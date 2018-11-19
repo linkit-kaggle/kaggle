@@ -23,7 +23,7 @@
 
 - If you want somebody else to be able to work on that particular branch, you have to push it to the remote github repo.
 Use `git push origin <branch-name>` to push your last commit to the remote.
-The other user can fetch new branches using `git fetch` and then switch to your branch using `git checkout <branch-name>`.
+The other user can fetch new branches using `git fetch` and then create a local copy of your branch using `git checkout -b <branch-name> origin/<branch-name>`.
 In case you are working on a branch together, use `git pull` on that branch to fetch changes to the files and merge them into your local copy.
 Btw, once you first used the `git push origin <branch-name>` command, Git remembers the local-remote relationship. 
 Means, next time you want to push changes on that branch, just run `git push`.
@@ -33,7 +33,7 @@ Stage and commit the changes on that branch and then switch to you local master 
 Now pull new changes from the remote origin master so you stay up to date (`git pull`).
 Merge your local branch `jb-kaggle-idea` into you master using `git merge jb-kaggle-idea`.
 Git merge always merges the argument branch (in this case `jb-kaggle-idea`) into the branch you are currently on.
-If there were no merge conflicts, stage, commit and then push your master to the remote: `git push`. Note that to push from master, you will never have to set up a remote branch manually, as the local-remote relationship was established on the `git clone` command in the beginning. 
+If there were no merge conflicts, push your master to the remote: `git push`. Note that to push from master, you will never have to set up a remote branch manually, as the local-remote relationship was established on the `git clone` command in the beginning. 
 
 - Other users can run `git pull` from their master to import the changes you made.
 
